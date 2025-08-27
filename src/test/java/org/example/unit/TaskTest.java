@@ -1,4 +1,6 @@
-package org.example;
+package org.example.unit;
+import org.example.Task;
+import org.example.ToDoList;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
