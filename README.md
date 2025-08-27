@@ -47,6 +47,18 @@ Eftersom domænet i denne case er relativt simpelt gør vi ikke brug af test dou
 ## 5. Validation through Mutation Testing:
 ### - Apply mutation testing to validate the effectiveness of your test suite.
 ### - Provide a detailed analysis of the mutation testing results and how they informed you testing process.
+<img width="1630" height="525" alt="image" src="https://github.com/user-attachments/assets/e8c399c6-8292-44d0-b04a-a6705b090adb" />
+Samlet: Line 77% (33/43), Mutation 65% (22/34), Test strength 69% (22/32).
+
+Per klasse: Task 100% mutation coverage (8/8) → stærke asserts; ToDoList 54% (14/26) → tests kører koden men fanger ikke alle fejl.
+
+Vi tilføjer målrettede tests til tom liste (forventer “No tasks found.” + null) og out-of-range indeks for update/delete/complete, samt eksplicit før/efter-asserts på liste-størrelse og felter. De tester netop de steder, hvor mutanter overlevede.
+
+<img width="1703" height="317" alt="image" src="https://github.com/user-attachments/assets/1b954ef2-690d-4501-a9cd-331a3e2ad389" />
+
+Fra vores mutation test på klasseniveau, der kan vi se at Task klassen dræber alle mutanter, hvilket betyder at vi har stærke asserts i vores unittests.
+
+ToDoList klassen har høj line coverage, men lav mutation coverage. Den fanger altså ikke fail-injections fra mutation testen godt nok.
 
 ## 6. Verification vs. Validation:
 ### - Reflect on the destinction between verification and validation as outlined in the Plutora article.
