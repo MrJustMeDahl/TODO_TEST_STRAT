@@ -8,7 +8,7 @@
 
 ## 2. Test Strategy Design:
 ### - Create a test strategy that includes unit tests, integration tests and specification-based tests.
-[Test strategien kan findes her / navn på link](/TestStrategy.md)
+[Test strategien kan findes her](/TestStrategy.md)
 ### - Discuss how each type of test contributes to the overall quality of the software.
 
 Unit tests medvirker til at sikre stabilitet for brugen af metoderne. Det skal sikre, at vi får det korrekte input og output. Alle funktionaliteter testes på et lavt kodeniveau.
