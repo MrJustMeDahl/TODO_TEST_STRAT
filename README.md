@@ -78,4 +78,12 @@ Peter Morlion taler i sin artikel om load testing og performance testing. Efters
 ## 8. Discussion on Test Categories:
 ### - Briefly discuss the test categories as outlined by Martin Fowler and classify the tests you have implemented accordingly.
 
+Der bliver benyttet 3 af de test kategorier der nævnes i Martin Fowlers artikel.
+Unit tests tester applikationens domænelag. De er små, hurtige og sikrer høj intern kvalitet. Derudover benytter vi os af integrationstests, som i dette tilfælde bliver kørt som broad stack. Dette sker da flowet er således: 
+Scanner Tjekker input -> Main køres -> TodoList/Task -> System.out
+Her bliver tastaturet simuleret, og outputtet fra terminalen bliver verificeret, så vi kan bekræfte, at komponenterne fungerer korrekt sammen.
+Vores Specification based test kan godt betegnes som en Business Facing Test, da testen foregår i normalt sprog, og bliver løst uden kode, for at teste funktionaliteten.
+Det kan også klassificeres som en user journey test, da vi tester brugerens navigation igennem systemet.
+Vi kunne godt have indført threshold testing nemt ved vores mutation testing. Dette kunne gøres ved at ændre på "mutation threshold" i PIT fx 80 %. Threshold Testen vil så fejle når vi rammer under grænsen på 80%. Testen ville køre i en CI Pipeline for automatisk testing.
+
 
