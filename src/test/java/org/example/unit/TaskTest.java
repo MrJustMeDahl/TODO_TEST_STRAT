@@ -37,6 +37,23 @@ public class TaskTest {
     }
 
     @Test
+    void deleteTaskInvalidIndex(){
+        Task task = new Task("Test Task", "Testing", LocalDate.of(2024, 12, 31));
+        ToDoList toDoList = new ToDoList();
+        toDoList.addTask(task);
+        assertEquals(1, toDoList.getTasks().size());
+        boolean result = toDoList.deleteTask(1);
+        assertFalse(result);
+        assertEquals(1, toDoList.getTasks().size());
+        result = toDoList.deleteTask(-1);
+        assertFalse(result);
+        assertEquals(1, toDoList.getTasks().size());
+        result = toDoList.deleteTask(0);
+        assertTrue(result);
+        assertEquals(0, toDoList.getTasks().size());
+    }
+
+    @Test
     void markCompleted(){
         Task task = new Task("Test Task", "Testing", LocalDate.of(2024, 12, 31));
         task.markCompleted();
