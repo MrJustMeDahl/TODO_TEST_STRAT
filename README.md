@@ -18,12 +18,16 @@ Til denne implementation bruges JUnit 5 som test framework.
 ### - Write a minimum of 5 unit tests, 2 integration tests and 1 specification-based tests.
 
 Unit tests:
-Findes 
+
+Findes i src/test/java/org/example/unit/TaskTest.java
 
 Integrations tests:
 
+Findes i src/test/java/org/example/integration/ToDoIntegrationTest.java
+
 Specification-based tests:
 
+Findes i src/test/Test case.pdf og src/test/java/org/example/unit/TaskTest.java
 
 ## 4. Use of Test Doubles:
 ### - Incorporate test doubles where necessary, based on the principles discussed by Martin Fowler.
