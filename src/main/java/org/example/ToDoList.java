@@ -30,14 +30,20 @@ public class ToDoList {
         }
     }
 
-    public void showTasks() {
+    public List<Task> showTasks() {
         if (tasks.isEmpty()) {
             System.out.println("No tasks found.");
-            return;
+            return null;
         }
-        for (int i = 0; i < tasks.size(); i++) {
-            System.out.println(i + ": " + tasks.get(i));
+        else {
+            return tasks;
         }
+
+
+
     }
 
+    public List<Task> getTasks() {
+        return tasks;
+    }
 }

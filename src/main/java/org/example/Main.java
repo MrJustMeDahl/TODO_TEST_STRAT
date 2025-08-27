@@ -1,6 +1,7 @@
 package org.example;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -52,7 +53,10 @@ public class Main {
                     toDoList.markTaskCompleted(completeIndex);
                     break;
                 case 5:
-                    toDoList.showTasks();
+                    List<Task> taskList = toDoList.showTasks();
+                    for (int i = 0; i < taskList.size(); i++) {
+                        System.out.println(i + ": " + taskList.get(i));
+                    }
                     break;
                 case 6:
                     System.out.println("Exiting...");
