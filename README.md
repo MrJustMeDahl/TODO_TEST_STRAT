@@ -27,7 +27,7 @@ Findes i [integrationstest filen](src/test/java/org/example/integration/ToDoInte
 
 Specification-based tests:
 
-Findes i [Test case pdf'en og unit test filen](src/test/Test case.pdf og src/test/java/org/example/unit/TaskTest.java)
+Findes i [Test case pdf'en](src/test/Test case.pdf)og [unit test filen](src/test/java/org/example/unit/TaskTest.java)
 
 ## 4. Use of Test Doubles:
 ### - Incorporate test doubles where necessary, based on the principles discussed by Martin Fowler.
