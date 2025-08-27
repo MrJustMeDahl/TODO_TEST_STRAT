@@ -18,10 +18,12 @@ public class ToDoList {
         }
     }
 
-    public void deleteTask(int index) {
+    public boolean deleteTask(int index) {
         if (index >= 0 && index < tasks.size()) {
             tasks.remove(index);
+            return true;
         }
+        return false;
     }
 
     public void markTaskCompleted(int index) {
