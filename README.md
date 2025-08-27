@@ -10,6 +10,10 @@
 ### - Create a test strategy that includes unit tests, integration tests and specification-based tests.
 ### - Discuss how each type of test contributes to the overall quality of the software.
 
+Unit tests medvirker til at sikre stabilitet for brugen af metoderne. Det skal sikre, at vi får det korrekte input og output. Alle funktionaliteter testes på et lavt kodeniveau.
+ Integrationstestene for programmet simulerer applikationen ved at køre Main og ”optage” outputtet fra terminalen med et prædefineret input, som skal sikre at programforløbet foregår korrekt.
+ Dette er med til at sikre at brugeroplevelsen er som forventet.
+ 
 ## 3. Implementation:
 ### - Implement the test strategy using one of the frameworks (NUnit, XUnit, MSTest) or equivalent in your chosen language.
 
